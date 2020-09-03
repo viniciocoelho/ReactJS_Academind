@@ -58,7 +58,7 @@ const person = new Person();
 person.printMyName();
 person.printGender(); */
 
-## SPREAD OPERATOR AND REST OPERATOR
+/* ## SPREAD OPERATOR AND REST OPERATOR
 
 CASO 1 - SPREAD
 
@@ -80,7 +80,8 @@ const newPerson = {
 console.log(newPerson);
 
 CASO 3 - REST
-const filter = (...args) => {
+const filter = (...args) => { // nesse caso o operador rest cria um array com as informações
     return args.filter(el => el === 1);
 }
 console.log(filter(1,2,3));
+ */

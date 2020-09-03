@@ -57,3 +57,30 @@ class Person extends Human{
 const person = new Person();
 person.printMyName();
 person.printGender(); */
+
+## SPREAD OPERATOR AND REST OPERATOR
+
+CASO 1 - SPREAD
+
+const numbers = [ 1,2,3];
+const newNumbers = [ ...numbers, 4]; // Esse é o operador spread. Ele importa as informações de outro array
+
+console.log(newNumbers);
+
+CASO 2 - SPREAD
+const person = {
+    name:'Max'
+};
+
+const newPerson = {
+    ...person, // spread operator
+    age: 28,
+};
+
+console.log(newPerson);
+
+CASO 3 - REST
+const filter = (...args) => {
+    return args.filter(el => el === 1);
+}
+console.log(filter(1,2,3));

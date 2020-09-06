@@ -80,8 +80,24 @@ const newPerson = {
 console.log(newPerson);
 
 CASO 3 - REST
-const filter = (...args) => { // nesse caso o operador rest cria um array com as informações
-    return args.filter(el => el === 1);
-}
-console.log(filter(1,2,3));
- */
+const filter = (...args) => {
+  // nesse caso o operador rest cria um array com as informações
+  return args.filter((el) => el === 1);
+};
+console.log(filter(1, 1, 2, 3, 1));
+
+
+## DESTRUCTURING - EXTRACT ARRAY ELEMENTS OR OBJECTS PROPERTIES AND STORE THEM IN VARIABLES
+
+[a, b] = ['hello', 'max']
+console.log(a)
+console.log(b)
+
+var name = {name:'max', age: 28}
+console.log(name.name)
+console.log(name.age) 
+
+const numbers = [ 1, 2, 3];
+[num1, num2] = numbers;
+console.log(num1, num2);
+*/

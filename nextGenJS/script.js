@@ -100,4 +100,16 @@ console.log(name.age)
 const numbers = [ 1, 2, 3];
 [num1, num2] = numbers;
 console.log(num1, num2);
+
+
+
+## ARROW FUNCTION
+
+const numbers = [ 1, 2, 3];
+const doubleArray = numbers.map((num) => {
+    return num * 2;
+});
+
+console.log(numbers);
+console.log(doubleArray);
 */

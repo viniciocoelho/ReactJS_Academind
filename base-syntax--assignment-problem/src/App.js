@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import userinput from "./UserInput/UserInput";
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
   render() {
@@ -20,8 +21,10 @@ class App extends Component {
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
         </ol>
 
-        <h1>Input Element</h1>
-        <userinput />
+        <h1>User Input</h1>
+        <UserInput />
+        <h1>User Output</h1>
+        <UserOutput />
         
       </div>
      

@@ -1,11 +1,11 @@
 import React from "react";
 
-const userinput = (props) => {
+const UserInput = (props) => {
     return (
         <div>
-            <input type="text" value="props.name"/>
+            <input type="text" value=""/>
         </div>
     );
 };
 
-export default userinput;
+export default UserInput;

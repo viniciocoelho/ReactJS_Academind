@@ -48,7 +48,9 @@ import Person from "./Person/Person";
         <p>This is really working</p>
         <button 
           style={style}
-          onClick={() => this.switchNameHandler('Maximilian!!')}>Switch Name</button>
+          onClick={() => this.switchNameHandler('Maximilian!!')}>
+            Switch Name
+        </button>
 
         {/* Assim que se reutiliza um component */}
         <Person 

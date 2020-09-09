@@ -1,14 +1,16 @@
 import React from 'react';
 
-const UserOutput = () => {
+import'./UserOutput.css';
+
+const userOutput = (props) => {
     return (
-        <div>
-            <p>this is the fist paragraph</p>
-            <p>this is the second paragraph</p>
+        <div className="UserOutput">
+            <p>Username: {props.username}</p> {/* o nome que estiver na props tem que ser igual ao q estiver no app.js */}           
+            <p>Some text</p>            
         </div>
     );
 };
 
 
 
-export default UserOutput;
+export default userOutput;

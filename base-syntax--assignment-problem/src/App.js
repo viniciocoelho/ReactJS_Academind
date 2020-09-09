@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import UserInput from './UserInput/UserInput';
+import UserInput from './UserInput/UserInput'; //usar sempre maiuscula aqui pra nao confundir o react
 import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
+
+  state = {
+    username: 'supermax'
+  }
+
+  inputChangedHandler = (event) => {
+    this.setState({username: event.target.value});
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,9 +31,13 @@ class App extends Component {
         </ol>
 
         <h1>User Input</h1>
-        <UserInput />
+        <UserInput 
+          changed={this.inputChangedHandler}
+          currentName={this.state.username}/>
         <h1>User Output</h1>
-        <UserOutput />
+        <UserOutput username={this.state.username}/>
+        <UserOutput username={this.state.username}/>
+        <UserOutput username="Coelho"/>
         
       </div>
      
